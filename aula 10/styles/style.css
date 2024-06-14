@@ -1,0 +1,178 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Tilt Neon", sans-serif;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+nav {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(216, 191, 216, 90%);
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: purple;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.fundo1 {
+  background-image: url("../images/fundo1.jpg");
+}
+
+.fundo2 {
+  background-image: url("../images/fundo2.jpg");
+}
+
+.fundo3 {
+  background-image: url("../images/fundo3.jpg");
+}
+
+.fundo1, .fundo2, .fundo3 {
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.destaque {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  color: darkorchid;
+  background-color: thistle;
+  padding: 10px;
+  width: 40%;
+  font-size: 1.35rem;
+  filter: drop-shadow(4px 4px seashell);
+  margin: auto;
+}
+
+.conteudo {
+  color: darkslateblue;
+  background-color: seashell;
+  padding: 160px 25px;
+}
+
+.texto {
+  text-align: justify;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: violet;
+}
+
+image {
+  width: 100%;
+}
+
+.clipe {
+  width: 90%;
+  border: 3px solid thistle;
+  border-radius: 8px;
+}
+
+.quadro_animado {
+  width: 320px;
+  height: 200px;
+  margin: auto;
+  background-size: cover;
+  border-radius: 5%;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-name: muda_imagem;
+}
+
+footer {
+    color: purple;
+    background-color: rgba(216, 191, 216, 90%);
+    padding: 20px;
+}
+
+@keyframes muda_imagem {
+  0% {
+    background-image: url("../images/anim1.jpg");
+  }
+  20% {
+    background-image: url("../images/anim2.jpg");
+  }
+  40% {
+    background-image: url("../images/anim3.jpg");
+  }
+  60% {
+    background-image: url("../images/anim3.jpg");
+  }
+  80% {
+    background-image: url("../images/anim4.jpg");
+  }
+  100% {
+    background-image: url("../images/anim1.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+    nav {
+        padding: 20px 0px;
+    }
+
+    ul {
+        padding:  5px;
+    }
+
+    li {
+        width: 20%;
+        float: left;
+        border-radius: 10px;
+        transition: background-color 1s;
+    }
+
+    li:hover {
+        background-color: rgba(255, 228, 225, 0.35);
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+
+    .destaque {
+        padding: 10px;
+        font-size: 2rem;
+        width: 25%;
+        border-radius: 15px;
+        transition: width 1s;
+    }
+
+    .destaque:hover {
+        width: 30%;
+    }
+
+    .conteudo {
+        padding: 120px;
+    }
+
+    .clipe {
+        width: 60%;
+    }
+
+    .quadro_animado {
+        width: 496px;
+        height: 320px;
+    }
+}
