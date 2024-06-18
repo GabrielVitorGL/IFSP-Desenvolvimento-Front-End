@@ -75,6 +75,7 @@ h2 {
 .solucoes {
     width: 30%;
     margin: 10px;
+    border-radius: 50%;
 }
 
 #vit, #ped, #con {
@@ -206,7 +207,7 @@ form p {
         transition: border 1s;
     }
 
-    .item_vitrine:hover {
+    .solucoes:hover {
         border: 10px solid white;
     }
 
