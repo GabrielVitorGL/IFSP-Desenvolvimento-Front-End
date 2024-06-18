@@ -119,14 +119,14 @@ form {
     margin: 50px auto;
 }
 
-label, #qtd, #prod, #botao {
+label, #qtd, #prod, .botao {
     font-size: 1.25rem;
     padding: 5px;
     border-radius: 4px;
     width: 100%;
 }
 
-#qtd, #prod, #botao {
+#qtd, #prod, .botao {
     font-family: inherit;
     text-align: center;
     border: none;
