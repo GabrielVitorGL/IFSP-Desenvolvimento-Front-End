@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sustentabilidade</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <link rel="icon" href="images/tecnologia.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>
+          <a href="#top">Home</a>
+        </li>
+        <li>
+          <a href="#vit">Vitrine</a>
+        </li>
+        <li>
+          <a href="#ped">Pedidos</a>
+        </li>
+        <li>
+          <a href="#con">Contato</a>
+        </li>
+      </ul>
+      <h1>Tecnologias</h1>
+    </header>
+    <main>
+      <h2>Soluções</h2>
+      <div class="container">
+        <img
+          class="solucoes"
+          src="./images/solucao1.png"
+          alt="Microchip"
+          title="Microchip"
+        />
+        <img
+          class="solucoes"
+          src="./images/solucao2.png"
+          alt="Drone"
+          title="Drone"
+        />
+        <img
+          class="solucoes"
+          src="./images/solucao3.png"
+          alt="Carro Inteligente"
+          title="Carro Inteligente"
+        />
+        <img
+          class="solucoes"
+          src="./images/solucao4.png"
+          alt="NFC"
+          title="NFC"
+        />
+        <img
+          class="solucoes"
+          src="./images/solucao5.png"
+          alt="Computação em Nuvem"
+          title="Computação em Nuvem"
+        />
+        <img
+          class="solucoes"
+          src="./images/solucao6.png"
+          alt="Relógio"
+          title="Relógio"
+        />
+        <img
+          class="solucoes"
+          src="./images/solucao7.png"
+          alt="Smartphone"
+          title="Smartphone"
+        />
+        <img
+          class="solucoes"
+          src="./images/solucao8.png"
+          alt="Satélite"
+          title="Satélite"
+        />
+      </div>
+
+      <h2 id="vit">Vitrine de Produtos</h2>
+      <div class="container">
+        <div class="item_vitrine">
+          <img src="./images/vitrine1.jpg" alt="Smartphone" />
+          <h3>Smartphone</h3>
+          <h4>20% desconto</h4>
+          <p>Velocidade e Desempenho</p>
+        </div>
+        <div class="item_vitrine">
+          <img src="./images/vitrine2.jpg" alt="Relógio" />
+          <h3>Relógio</h3>
+          <h4>10% desconto</h4>
+          <p>Inteligente Fitness</p>
+        </div>
+        <div class="item_vitrine">
+          <img src="./images/vitrine3.jpg" alt="Drone" />
+          <h3>Drone</h3>
+          <h4>15% desconto</h4>
+          <p>Profissional HD</p>
+        </div>
+      </div>
+
+      <h2 id="ped">Pedidos</h2>
+      <form method="get">
+        <label for="prod">Produto</label>
+        <select id="prod" name="prod" required>
+          <option value="" selected disabled>Selecione</option>
+          <option value="smart">Smartphone</option>
+          <option value="relog">Relógio</option>
+          <option value="drone">Drone</option>
+        </select>
+
+        <label for="qtd">Quantidade</label>
+        <input type="number" id="qtd" name="qtd" min="1" max="20" required />
+        <button type="submit" class="botao">Solicitar</button>
+      </form>
+
+      <h2 id="con">Contato</h2>
+      <form method="get">
+        <p>Deixe seus dados e entraremos em contato:</p>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          max="38"
+          required
+          placeholder="Nome"
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          max="38"
+          required
+          placeholder="E-mail"
+        />
+        <input
+          type="tel"
+          id="fone"
+          name="fone"
+          max="17"
+          required
+          placeholder="Telefone"
+        />
+        <button type="submit" class="botao">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
