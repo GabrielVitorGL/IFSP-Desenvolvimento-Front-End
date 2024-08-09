@@ -48,6 +48,10 @@ var navLinks = document.querySelectorAll(".cel_navbar .navbar_link");
 
 navLinks.forEach(function (link) {
   link.addEventListener("click", function () {
-    celularmenu.style.display = "none";
+    closenavbar();
   });
 });
+
+function closenavbar() {
+  celularmenu.style.display = "none";
+}

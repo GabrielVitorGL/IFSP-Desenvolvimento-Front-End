@@ -134,6 +134,8 @@ body {
   height: 100vh;
   width: 100vw;
   overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .slogan_container {
@@ -190,7 +192,7 @@ body {
 }
 
 .icon {
-  margin-top: 16px;
+  margin-top: 1rem;
   margin-left: 50px;
 }
 
@@ -221,11 +223,6 @@ body {
   padding: 7.5rem 2rem;
 }
 
-.comparacao_tabela {
-  border-radius: 14px !important;
-  border: 1px solid #e5e5e5;
-}
-
 tr:nth-child(even) {
   background-color: #f6f4fa;
 }
@@ -245,13 +242,14 @@ th:first-child {
 table {
   font-family: "poppins", sans-serif;
   border-collapse: separate;
-  border-radius: 14px !important;
   border-spacing: 0;
   color: #212529;
+  border-radius: 14px;
+  border: 1px solid #e5e5e5;
 }
 
 table th img {
-  margin-left: 32px;
+  margin-left: 2rem;
 }
 
 table td img {
@@ -523,6 +521,10 @@ table td img {
   text-align: center;
 }
 
+.mobile_download {
+  display: none;
+}
+
 .downloadfinal {
   font-family: "poppins", sans-serif;
   display: inline-flex;
@@ -557,53 +559,51 @@ table td img {
   text-align: center;
   margin-top: 80px;
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #rodape {
   background-color: #2c2c35;
   display: inline-flex;
+  padding-top: 6rem;
   padding-bottom: 6rem;
   width: 100%;
 }
 
 .rodapebox {
-  height: 411px;
-  width: 1080px;
-  display: block;
-  margin: auto;
-  margin-top: 96px;
+  max-width: 72rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.rodape_container {
+  display: inline-flex;
+  width: 100%;
+  max-width: 72rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .rodape_coluna {
   line-height: 1.9;
-  float: left;
-  position: static;
-  width: 184px;
-  height: 311px;
-  margin-right: 32px;
-}
-
-.rodape_contatos {
-  float: left;
-  position: static;
-  width: 184px;
-  height: 311px;
+  flex: 1 1 0;
 }
 
 .rodape_contatos h5 {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 0px;
   margin-top: 25px;
 }
 
 .rodape_coluna:first-child {
-  float: left;
-  position: static;
-  width: 184px;
-  height: 311px;
-  margin-left: 16px;
+  margin-left: 1rem;
+}
+
+.rodape_coluna:last-child {
+  margin-right: 1rem;
 }
 
 .rodapebox h4 {
@@ -622,7 +622,8 @@ table td img {
   font-family: "poppins", sans-serif;
 }
 
-.rodapebox a {
+.rodapebox a,
+.logofinal a {
   color: #adb5bd;
   text-decoration: none;
   line-height: 2;
@@ -632,10 +633,9 @@ table td img {
 }
 
 .logofinal {
-  width: 1080px;
-  height: 30px;
+  width: 98%;
   padding-top: 48px;
-  margin-top: 24px;
+  margin-top: 3rem;
   box-sizing: border-box;
   border-style: solid;
   border-color: #383e44;
@@ -657,6 +657,13 @@ table td img {
 .margem {
   display: inline-block;
   margin-bottom: 25px;
+}
+
+#rodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .funcionalidades3 h1 {
@@ -718,6 +725,32 @@ table td img {
   display: none;
 }
 
+@media (max-width: 1354px) {
+  .textocard2 h2 {
+    font-size: 30px;
+  }
+
+  .card3 h2 {
+    font-size: 32px;
+  }
+
+  .card3_imagecontainer img {
+    padding-bottom: 5rem;
+  }
+
+  .card1 h2 {
+    font-size: 30px;
+  }
+
+  .pc_download {
+    display: none;
+  }
+
+  .mobile_download {
+    display: block;
+  }
+}
+
 @media (max-width: 1100px) {
   .navbar a {
     display: none;
@@ -764,6 +797,147 @@ table td img {
     width: 100%;
     font-size: 60px;
   }
+
+  #vantagens {
+    padding: 6rem 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 2rem;
+    flex: auto;
+  }
+
+  .card1_imagecontainer img,
+  .card3_imagecontainer img {
+    width: 50%;
+    margin-bottom: 4rem;
+  }
+
+  .comparacao_container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .texto_comparacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .comparacao_tabela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box1 {
+    max-width: 47rem;
+  }
+
+  .textocomp {
+    padding: 0.5rem 3rem 2rem 3rem;
+  }
+
+  .visual_container {
+    flex-direction: column;
+    padding: 6rem 6rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .textovisual {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .visual_imagecontainer {
+    max-width: 100%;
+  }
+
+  #download {
+    padding: 12rem 6rem;
+    margin-top: 6rem;
+  }
+
+  .sloganfinal {
+    font-size: 40px;
+  }
+
+  .downloadfinal {
+    padding: 0rem 2rem;
+    margin-top: 2rem;
+  }
+
+  .rodapebox {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .rodape_coluna {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  .rodape_coluna:first-child {
+    margin-left: 2rem;
+  }
+
+  #rodape {
+    padding-top: 2rem;
+  }
+
+  .logofinal {
+    width: 95%;
+  }
+}
+
+@media (max-width: 750px) {
+  .slogan {
+    margin-top: 5rem;
+    font-size: 40px;
+  }
+
+  .previa_container {
+    flex-direction: column;
+  }
+
+  .previa {
+    width: 100%;
+  }
+
+  .principal {
+    justify-content: space-between;
+  }
+
+  .logofinal {
+    width: 90%;
+  }
+}
+
+@media (max-width: 675px) {
+  th:first-child {
+    font-size: 18px;
+  }
+
+  table th img {
+    margin-left: 0px;
+  }
+
+  table td img {
+    margin-left: 10px;
+  }
+
+  .textotabela {
+    padding-left: 10px;
+  }
+
+  .box1 {
+    padding: 3px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -793,7 +967,7 @@ table td img {
   }
 
   .download_principal {
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
     margin-top: 1rem;
   }
 
@@ -807,26 +981,8 @@ table td img {
     margin-left: 0;
   }
 
-  .previa_container {
-    flex-direction: column;
-    margin: 0;
-  }
-
-  .previa {
-    width: 100%;
-  }
-
-  .comparacao_container {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-
   .comparacao_tabela {
     width: 100%;
-  }
-
-  .textocomp {
-    padding: 0.5rem 3rem 2rem 3rem;
   }
 
   .textocomp h1 {
@@ -834,17 +990,7 @@ table td img {
   }
 
   .textocomp h2 {
-    font-size: 16px;
-  }
-
-  .visual_container {
-    flex-direction: column;
-    padding: 6rem 1rem;
-  }
-
-  .textovisual {
-    max-width: 100%;
-    margin-bottom: 2rem;
+    font-size: 1rem;
   }
 
   .textovisual h1 {
@@ -856,22 +1002,15 @@ table td img {
   }
 
   .textovisual h3 {
-    font-size: 16px;
+    font-size: 1rem;
+  }
+
+  .visual_container {
+    padding: 6rem 1rem;
   }
 
   .visual_imagecontainer {
     max-width: 100%;
-  }
-
-  #vantagens {
-    padding: 6rem 1rem;
-    flex-direction: column;
-  }
-
-  .card {
-    width: 100%;
-    margin-bottom: 2rem;
-    flex: auto;
   }
 
   .card1 h2 {
@@ -879,7 +1018,7 @@ table td img {
   }
 
   .card1 h3 {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .card3 h2 {
@@ -887,27 +1026,12 @@ table td img {
   }
 
   .card3 h3 {
-    font-size: 16px;
-  }
-
-  .card1_imagecontainer img,
-  .card3_imagecontainer img {
-    width: 50%;
-    margin-bottom: 4rem;
+    font-size: 1rem;
   }
 
   #download {
     padding: 6rem;
     margin-top: 6rem;
-  }
-
-  .sloganfinal {
-    font-size: 40px;
-  }
-
-  .downloadfinal {
-    padding: 1rem 2rem;
-    margin-top: 2rem;
   }
 
   .downloadfinal h2 {
@@ -923,16 +1047,7 @@ table td img {
   }
 
   .rodapebox {
-    height: 100%;
     width: 100%;
-    margin-top: 2rem;
-  }
-
-  .rodape_coluna {
-    width: 100%;
-    height: 100%;
-    margin-right: 0;
-    margin-left: 0;
   }
 
   .rodape_contatos {
@@ -940,14 +1055,8 @@ table td img {
     height: 100%;
   }
 
-  .rodape_coluna:first-child {
-    width: 100%;
-    height: 100%;
-    margin-left: 0;
-  }
-
   .rodapebox h4 {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .rodapebox h5 {
@@ -956,11 +1065,6 @@ table td img {
 
   .rodapebox a {
     font-size: 14px;
-  }
-
-  .logofinal {
-    width: 100%;
-    padding-top: 24px;
   }
 
   .textofinal {
@@ -976,25 +1080,9 @@ table td img {
   }
 }
 
-@media (max-width: 675px) {
-  th:first-child {
-    font-size: 18px;
-  }
-
-  table th img {
-    margin-left: 0px;
-  }
-
-  table td img {
-    margin-left: 10px;
-  }
-
-  .textotabela {
-    padding-left: 10px;
-  }
-
-  .box1 {
-    padding: 3px;
+@media (max-width:500px) {
+  #download {
+    padding: 6rem 1rem;
   }
 }
 
@@ -1006,6 +1094,15 @@ table td img {
   .comparacao_container {
     padding-left: 2px;
     padding-right: 2px;
+  }
+
+  .logofinal {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 
