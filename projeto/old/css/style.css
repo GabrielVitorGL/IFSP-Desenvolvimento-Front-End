@@ -1,0 +1,723 @@
+body{
+    background-image: url('../img/fundo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+html,
+body {
+    overflow-x: hidden;
+}
+.header2{
+    margin-top: 0px;
+    margin-left: 8px;
+}
+.pesquisar{
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    float: right;
+    margin-top: 20px;
+    margin-right: 30px;
+    border: 1px solid #ffffff;
+    font-size:13px;
+    padding: 8px 26px;
+    cursor: pointer;
+    color: #222985;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+}
+.pesquisar:hover{
+    transition: 0.3s;
+    opacity: 0.9;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.download{
+    font-family: 'poppins', sans-serif;
+    float: right;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-right: 30px;
+    border: 1px solid #ffffff;
+    font-size:13px;
+    padding: 8px 26px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+}
+.download:hover{
+    transition: 0.3s;
+    opacity: 0.9;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: rgba(161, 48, 101, 0.404);
+}
+.blog{
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    font-size: 12px;
+    margin-top: 33px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+.sobre{
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    font-size: 12px;
+    margin-top: 33px;
+    margin-right:30px;
+    text-decoration: none;
+    color: #fff;
+}
+.patrocinadores{
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    font-size: 12px;
+    margin-top: 33px;
+    margin-right:30px;
+    text-decoration: none;
+    color: #fff;
+}
+.criadores{
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    font-size: 12px;
+    margin-top: 33px;
+    margin-right:30px;
+    text-decoration: none;
+    color: #fff;
+}
+.navegador{
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    font-size: 12px;
+    margin-top: 33px;
+    margin-right:30px;
+    text-decoration: none;
+    color: #fff;
+}
+.seta{
+    display: inline-block;
+    margin-left: 3px;
+    vertical-align: middle;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgb(255, 255, 255);
+}
+.logo{
+    width: 195px;
+    height: 43px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.banner{
+    width:100vw;
+    height: 100vh;
+    background-image: url('../img/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bannerText{
+    color: #FFF;
+    display: block;
+    margin-left: 20vh;
+    padding-top: 50vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bannerText span{
+    color: rgb(231, 18, 117);
+}
+.menu{
+    visibility: hidden;
+    opacity:0;
+    margin-top:61px;
+    position:fixed;
+    background-color:#fff;
+    min-width: 240px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition-duration: 0.2s;
+}
+.menu2{
+    position: relative;
+    display: inline-block;
+    margin-top:26px;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #5e6175;
+    margin-left: 26px;
+}
+.menu2:last-child{
+    margin-bottom:26px;
+}
+.cascata{
+    position: relative;
+    float: right;
+}
+.cascata:hover .menu{
+    visibility: visible;
+    opacity: 1;
+}
+.slogan{
+    line-height: 1.5;
+    font-size:70px;
+    font-weight: 600;
+    color: #e8dfef;
+    font-family: 'poppins', sans-serif;
+    width:1200px;
+    height:212px;
+    text-align:center;
+    margin:auto;
+    margin-top: 30px;
+}
+.downloadprincipal{
+    font-family: 'poppins', sans-serif;
+    margin: auto;
+    margin-top:30px;
+    font-size:17px;
+    padding: 2px 25px;
+    width: 330px;
+    height:72px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #fb542b;
+    text-decoration: none;
+    border-radius: 40px;
+}
+.downloadprincipal:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.downloadprincipal h2{
+    vertical-align:center;
+    font-size:26px;
+    margin-top:15px;
+    margin-right: 50px;
+    float: right;
+    font-weight: 500;
+}
+.downloadprincipal img{
+    margin-top:16px;
+    margin-left: 50px;
+}
+.icon{
+    margin-top:16px;
+    margin-left: 50px;
+}
+.previa{
+    position:absolute;
+    width:85%;
+    left: 8%;
+    padding-top: 5.25rem;
+    height: auto;
+}
+.funcionalidades1{
+    background-color: #fbfaff;
+    display:block;
+    position:absolute;
+    width:101%;
+    height: 105%;
+    margin-top:56.8vh;
+    margin-left: -10px;
+}
+.comparacao{
+    margin-top: 120px;
+    margin-left: 220px;
+    float: left;
+    width:920px;
+    height: 838px;
+    overflow: hidden;
+    border-radius: 14px !important;
+    border:1px solid #e5e5e5;
+
+}
+.sticky {
+    z-index: 5;
+    position:fixed;
+    top: 0;
+    transition: 0.6s;
+    padding-bottom: 15px;
+    background-color: #0000009c;
+    margin-left: -8px;
+    width: 100%;
+}
+tr:nth-child(even){
+    background-color: #f6f4fa;
+}
+tr{
+    background-color: #fbfaff;
+}
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+th:first-child{
+    font-size: 27px;
+    font-weight: 600;
+}
+table{
+    font-family: 'poppins', sans-serif;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px !important;
+    color: #212529;
+}
+table th img{
+    margin-left: 32px;
+}
+table td img{
+    margin-left: 46px;
+}
+.textotabela{
+    padding-left:30px;
+}
+.textocomp{
+    margin-top: 3px;
+    margin-left: 3px;
+    padding-top:120px;
+    width:419px;
+    height: 538px;
+}
+.textocomp h1{
+    font-family: 'poppins', sans-serif;
+    margin-left: 60px;
+    line-height:1.5;
+    width: 419px;
+    font-size:36px;
+    font-weight: 600;
+    color: #2b2a36;
+}
+.textocomp h2{
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-left: 60px;
+    font-size: 20px;
+    width: 419px;
+    text-align: justify;
+    line-height: 1.7;
+    color: #3b3e4f;
+}
+.box1{
+    float:right;
+    margin-top: 120px;
+    margin-right:200px;
+    width:536px;
+    height: 838px;
+    background-image: linear-gradient(125deg, #3e2ecd, #fa4247 );
+    border-radius:13px;
+}
+.box2{
+    margin-left: 3px;
+    margin-top: 3px;
+    width:530px;
+    height: 832px;
+    background-color: #fbfaff;
+    border-radius:11px;
+}
+.divisa1{
+    margin-left: -8px;
+    margin-top: -168px;
+    width: 100%; 
+    height: auto;
+    transform: scale(-1, -1);
+}
+.visualimg{
+    width: 100%; 
+    height: auto;
+    transform: scale(-1, -1);
+}
+.funcionalidades2{
+    background-color: #f2f1ff;
+    display:block;
+    position:absolute;
+    width:101%;
+    height: 193%;
+    margin-top:179vh;
+    margin-left: -10px;
+}
+.textovisual{
+    float:left;
+    font-family: 'poppins', sans-serif;
+    font-size:19px;
+    margin-top: 80px;
+    margin-left: 200px;
+    width:40%;
+    font-weight: 600;
+    color: #212529;
+}
+.textovisual h2{
+    margin-top: 20px;
+    font-size:24px;
+    color:#3333cc;
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+.visual{
+    float: right;
+    margin-right: 150px;
+    width:40%;
+    margin-top: 110px;
+    height:auto;
+    transform: scale(-1, -1);
+}
+.textovisual h1{
+    margin-bottom: 25px;
+    margin-top:30px;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 38px;
+}
+.textovisual h3{
+    line-height: 1.5;
+    font-size:22.2px;
+    margin-right: 7px;
+    margin-top: 22px;
+    font-weight: 400;
+    color: #3b3e4f;
+}
+.card{
+    padding: 20px 12px 0px 12px;
+    margin-top: 860px;
+    margin-left: 260px;
+    width:1410px;
+    height:734px;
+}
+.card1{
+    border-radius: 17px;
+    float: left;
+    width:448px;
+    height:711px;
+    background-color: #15151a;
+}
+.card2{
+    border-radius: 17px;
+    float: right;
+    width:448px;
+    height:711px;
+    overflow: hidden;
+    background-image: linear-gradient(125deg, #4235df, #6e0d85 );
+}
+.card3{
+    border-radius: 17px;
+    float: right;
+    margin-right: 32px;
+    width:448px;
+    height:711px;
+    background-image: linear-gradient(180deg, #2b19c3, #0c061f );
+}
+.extensoes{
+    float: right;
+    border-radius:20px;
+    width:440%;
+    margin-right: 100px;
+    margin-top:30px;
+}
+.textocard2{
+    margin-left:45px;
+    width:80%;
+    font-family: 'poppins', sans-serif;
+}
+.textocard2 h2{
+    line-height: 1.5;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 22px;
+}
+.textocard2 h3{
+    line-height: 1.5;
+    font-size:17px;
+    font-weight: 400;
+    color: rgb(243, 241, 241);
+}
+.card1 h2{
+    line-height: 1.5;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    margin-left:30px;
+    margin-right: 30px;
+    margin-top: 40px;
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 22px;
+}
+.card1 img{
+    margin-top:30px;
+    height:40%;
+    margin-left:112px;
+}
+.card1 h3{
+    line-height: 1.5;
+    font-family: 'poppins', sans-serif;
+    margin-left:30px;
+    margin-right: 30px;
+    margin-top: 60px;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 400;
+    color: #f7f2f0;
+    margin-bottom: 22px;
+}
+.card3 h2{
+    line-height: 1.5;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    margin-left:30px;
+    margin-right: 30px;
+    margin-top: 40px;
+    font-size: 41px;
+    color: #ffffff;
+    margin-bottom: 22px;
+}
+.card3 h3{
+    line-height: 1.54;
+    font-family: 'poppins', sans-serif;
+    margin-left:40px;
+    margin-right: 50px;
+    margin-top: 60px;
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(243, 241, 241);
+    margin-bottom: 22px;
+}
+.card3 img{
+    margin-top:20px;
+    height:46%;
+    margin-left:64px;
+}
+.divisa2{
+    display:relative;
+    margin-top: -1px;
+    margin-left: -8px;
+    width: 100%; 
+    height: auto;
+}
+.funcionalidades3{
+    display:block;
+    position:absolute;
+    width:101%;
+    height: 217%;
+    margin-top:3523px;
+    overflow: hidden;
+    margin-left: -10px;
+    background-image:linear-gradient(-20.43494882deg,#2819c6 0%,#720c81 100%);
+}
+.textura{
+    width:90%;
+    margin-top: -410px;
+    margin-left: -90px;
+}
+.bolha1{
+    width:720px;
+    height:200px;
+    margin-top: -840px;
+    float: right;
+    margin-right: 420px;
+    border-radius: 4rem;
+    background-color: rgba(255,255,255, 0.1);
+}
+.bolha1 h2{
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 27px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top:62px;
+    font-weight: 500;
+    opacity: 1;
+    color: rgba(243, 241, 241, 1);
+}
+.bolha2{
+    width:720px;
+    height:300px;
+    margin-top: -510px;
+    float: left;
+    margin-left: 420px;
+    border-radius: 4rem;
+    background-color: rgba(255,255,255, 0.1);
+}
+.bolha2 h2{
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 27px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top:72px;
+    font-weight: 500;
+    opacity: 1;
+    color: rgba(243, 241, 241, 1);
+}
+.bolha3{
+    width:720px;
+    height:150px;
+    margin-top: -70px;
+    float: right;
+    margin-right: 420px;
+    border-radius: 4rem;
+    background-color: rgba(255,255,255, 0.1);
+}
+.bolha3 h2{
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 27px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top:56px;
+    font-weight: 500;
+    opacity: 1;
+    color: rgba(243, 241, 241, 1);
+}
+.sloganfinal{
+    font-size:50px;
+    color: #f3eff7;
+    font-family: 'poppins', sans-serif;
+    width:1200px;
+    font-weight: 500;
+    text-align:center;
+    margin-left:340px;
+    margin-top: 260px;
+}
+.downloadfinal{
+    font-family: 'poppins', sans-serif;
+    margin: auto;
+    margin-top:120px;
+    padding: 2px 25px;
+    width: 754px;
+    height:89px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #fb542b;
+    text-decoration: none;
+    border-radius: 100px;
+}
+.downloadfinal:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.downloadfinal h2{
+    vertical-align:center;
+    font-size: 1.875rem;
+    margin-top:20px;
+    margin-right: 50px;
+    float: right;
+    font-weight: 500;
+}
+.icon2{
+    margin-top:21px;
+    margin-left: 70px;
+}
+.sloganfinal2{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 80px;
+    color: #fff;
+    font-size:16px;
+}
+.rodape{
+    background-color: #2c2c35;
+    display:block;
+    position:absolute;
+    width:101%;
+    height: 650px;
+    margin-top:585vh;
+    margin-left: -10px;
+}
+.rodapebox{
+    height:411px;
+    width:1080px;
+    display: block;
+    margin: auto;
+    margin-top: 96px;
+}
+.rodapecoluna{
+    line-height: 1.9;
+    float: left;
+    position:static;
+    width:184px;
+    height:311px;
+    margin-right: 32px;
+}
+.rodapecoluna5{
+    float: left;
+    position:static;
+    width:184px;
+    height:311px;
+}
+.rodapecoluna:first-child{
+    float: left;
+    position:static;
+    width:184px;
+    height:311px;
+    margin-left: 16px;
+}
+.rodapebox h4{
+    color: #fff;
+    font-size:17px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    font-family: 'poppins', sans-serif;
+    font-weight:600;
+}
+.rodapebox h5{
+    color: #fff;
+    font-weight:400;
+    font-size:15px;
+    font-family: 'poppins', sans-serif;
+}
+.rodapebox a{
+    color: #adb5bd;
+    text-decoration: none;
+    line-height:2;
+    font-size:15px;
+    font-family: 'poppins', sans-serif;
+    font-weight:400;
+}
+.logofinal{
+    width:1080px;
+    height:30px;
+    padding-top: 48px;
+    margin-top: 24px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #383e44;
+    border-width: 1px 0px 0px 0px;
+    display: inline-block;
+}
+.termos{
+    margin-right: 5px;
+    font-size:14px !important;
+    text-decoration: none;
+}
+.seguranca{
+    margin-left: 5px;
+    font-size:14px !important;
+    text-decoration: none;
+}
+.logofinal a{
+    margin-top:3px;
+    float:right
+}
+.barra{
+    font-size:14px !important;
+}
+.margem{
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.funcionalidades3 h1{
+    line-height:1.5;
+}
+.downloadfinal img{
+    margin-top:23px;
+    margin-left: 70px;
+}
