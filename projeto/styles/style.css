@@ -681,10 +681,6 @@ table td img {
   padding-bottom: 30px;
   border-radius: 7px;
   padding-right: 40%;
-  box-sizing: border-box;
-  border-style: solid;
-  border-top: #2b19c3;
-  border-width: 21px 0px 0px 0px;
 }
 .celularmenu .menu {
   visibility: visible;
@@ -789,7 +785,7 @@ table td img {
   }
 
   header {
-    background-color: #141414;
+    background-color: #141414de;
     padding-bottom: 10px;
   }
 
